@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"
+    integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+</head>
+
+
+<body>
+  <!-- sidebar -->
+  <nav>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">POS</span>
+        <i class="bx bx-menu menu-icon icon"></i>
+      </div>
+
+      <!-- Home -->
+      <div class="sidebar-content">
+        <div class="boxs">
+          <ul class="lists">
+
+            <!-- Dashboad -->
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class='bx bxs-dashboard icon'></i>
+                <span class="link">Dashboad</span>
+              </a>
+            </li>
+
+            <!-- Customer -->
+            <li class="list">
+              <a href="employee.html" class="nav-link">
+                <i class='bx bxs-user icon'></i>
+                <span class="link">Employee</span>
+              </a>
+            </li>
+
+            <!-- Bill -->
+            <li class="list">
+              <a href="order.html" class="nav-link">
+                <i class='bx bx-money-withdraw icon'></i>
+                <span class="link">order</span>
+              </a>
+            </li>
+
+            <!-- Category -->
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class='bx bx-package icon'></i>
+                <span class="link">category</span>
+                <i class='bx bxs-chevron-down downicon'></i>
+              </a>
+              <ul class="dropdown">
+                <li><a href="prdlist.html">Product List</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+                <li><a href="ctrlist.html">Product Category</a></li>
+                <li><a href="addcategory.html">Add Product Category</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logout -->
+        <li class="list">
+          <a href="#" class="nav-link">
+            <i class="bx bx-log-out icon"></i>
+            <span class="link">Logout</span>
+          </a>
+        </li>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- sidebar -->
+
+  <!-- tabel -->
+  <section class="container">
+    <div class="logo-res">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name">POS</span>
+    </div>
+
+    <main>
+      <div class="left">
+        <header>
+          <!-- box1 -->
+          <div class="box box-1">
+            <div class="top">
+              <div class="right">
+                <i class='bx bx-coin-stack' id="icon"></i>
+              </div>
+            </div>
+            <div class="bottom">
+              <span class="num">$00.00</span>
+              <span class="text">รายได้รวม</span>
+            </div>
+
+          </div>
+
+          <!-- box2 -->
+          <div class="box box-2">
+            <div class="top">
+              <div class="right">
+                <i class='bx bx-food-menu' id="menu"></i>
+              </div>
+            </div>
+            <div class="bottom">
+              <span class="num">00.00</span>
+              <span class="text">ยอดสั่งอาหาร</span>
+
+            </div>
+          </div>
+
+          <!-- box3 -->
+          <div class="box box-3">
+            <div class="top">
+              <div class="right">
+                <i class='bx bx-money' id="money"></i>
+              </div>
+            </div>
+            <div class="bottom">
+              <span class="num">$00.00</span>
+              <span class="text">รายได้วันนี้</span>
+            </div>
+          </div>
+
+
+        </header>
+
+        <div class="con-table">
+          <h1>เมนูที่ขายได้ในอาทิตย์นี้</h1>
+          <!-- <hr> -->
+          <table>
+            <thead>
+              <tr>
+                <td>ลำดับ</td>
+                <td>เมนู</td>
+                <td>จำนวน</td>
+                <td>ราคา</td>
+                <td>รวม</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td> ข้าวขาหมู</td>
+                <td>200</td>
+                <td>50฿</td>
+                <td>10,000</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+      <!-- tabel -->
+
+      <div class="right">
+        <div class="box-mostorder">
+          <div class="info">
+            <h1>Most Order</h1>
+            <!-- เส้น -->
+            <div class="br">
+            </div>
+
+            <!-- เมนูยอดฮิต -->
+            <table>
+              <tr class="most">
+                <td width="20">
+                  <div class="imgbx"><img src="img/01.jpg" alt=""></div>
+                </td>
+                <td>
+                  <h4>ข้าวขาหมู 200 จาน</h4>
+                </td>
+              </tr>
+              <tr class="most">
+                <td width="20">
+                  <div class="imgbx"><img src="img/01.jpg" alt=""></div>
+                </td>
+                <td>
+                  <h4>ข้าวขาหมู 200 จาน</h4>
+                </td>
+              </tr>
+              <tr class="most">
+                <td width="20">
+                  <div class="imgbx"><img src="img/01.jpg" alt=""></div>
+                </td>
+                <td>
+                  <h4>ข้าวขาหมู 200 จาน</h4>
+                </td>
+              </tr>
+              <tr class="most">
+                <td width="20">
+                  <div class="imgbx"><img src="img/01.jpg" alt=""></div>
+                </td>
+                <td>
+                  <h4>ข้าวขาหมู 200 จาน</h4>
+                </td>
+              </tr>
+              <tr class="most">
+                <td width="20">
+                  <div class="imgbx"><img src="img/01.jpg" alt=""></div>
+                </td>
+                <td>
+                  <h4>ข้าวขาหมู 200 จาน</h4>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+
+        </div>
+
+        <!-- ADDCHART -->
+        <div class="graphBox">
+          <div class="box">
+            <canvas id="myChart" width="50" height="50"></canvas>
+            <script>
+              const ctx = document.getElementById('myChart');
+              const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                    ],
+                    borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </main>
+  </section>
+
+
+
+  <script>
+    const navBar = document.querySelector("nav"),
+      menuBtns = document.querySelectorAll(".menu-icon"),
+      overlay = document.querySelector(".overlay");
+
+    menuBtns.forEach((menuBtn) => {
+      menuBtn.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    });
+
+    overlay.addEventListener("click", () => {
+      navBar.classList.remove("open");
+    });
+  </script>
+
+
+</body>
+
+</html>
