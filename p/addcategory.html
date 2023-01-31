@@ -16,20 +16,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"
     integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- datatable -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-  <script>
-    $(document).ready(function () {
-        $('#example').DataTable({
-          "searching" : false
-        });
-      });
-  </script>
 </head>
-
+</head>
 
 
 <body>
@@ -53,22 +41,21 @@
               </a>
             </li>
 
-            <!-- Customer -->
-            <li class="list">
-              <a href="employee.html" class="nav-link">
-                <i class='bx bxs-user icon'></i>
-                <span class="link">Employee</span>
-              </a>
-            </li>
-
-            <!-- Bill -->
-            <li class="list">
-              <a href="order.html" class="nav-link">
-                <i class='bx bx-money-withdraw icon'></i>
-                <span class="link">order</span>
-              </a>
-            </li>
-
+              <!-- Customer -->
+              <li class="list">
+                <a href="employee.html" class="nav-link">
+                  <i class='bx bxs-user icon'></i>
+                  <span class="link">Employee</span>
+                </a>
+              </li>
+  
+             <!-- Bill -->
+              <li class="list">
+                <a href="order.html" class="nav-link">
+                  <i class='bx bx-money-withdraw icon'></i>
+                  <span class="link">order</span>
+                </a>
+              </li>
 
             <!-- Category -->
             <li class="list">
@@ -82,7 +69,6 @@
                 <li><a href="addproduct.html">Add Product</a></li>
                 <li><a href="ctrlist.html">Product Category</a></li>
                 <li><a href="addcategory.html">Add Product Category</a></li>
-              </ul>
             </li>
           </ul>
         </div>
@@ -118,64 +104,48 @@
 
     <main>
 
+      </header>
       <div class="con-table">
-        <h1>Employee</h1>
-        <!-- เส้น -->
-        <div class="br">
-        </div>
-        <table id="example" class="display" >
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>First-Name</th>
-              <th>Last-Name</th>
-              <th>Phone</th>
-              <th>E-mail</th>
-              <th>Date</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>D101</td>
-              <td>Hot</td>
-              <td>Humnoi</td>
-              <td>09123456</td>
-              <td>hothumnoi@gmail.com</td>
-              <td>11/01/2023</td>
-              <td>
-                <a href=""><i class='bx bxs-edit-alt iconpen'></i></a>
-                <a href=""><i class='bx bx-trash icontrash'></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>D101</td>
-              <td>Hot</td>
-              <td>Humnoi</td>
-              <td>09123456</td>
-              <td>hothumnoi@gmail.com</td>
-              <td>11/01/2023</td>
-              <td>
-                <a href=""><i class='bx bxs-edit-alt iconpen'></i></a>
-                <a href=""><i class='bx bx-trash icontrash'></i></a>
-              </td>
-            </tr>
+        <!-- Create Form -->
+        <form id="form">
 
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>ID</th>
-              <th>First-Name</th>
-              <th>Last-Name</th>
-              <th>Phone</th>
-              <th>E-mail</th>
-              <th>Date</th>
-              <th>Action</th>
-            </tr>
-          </tfoot>
-        </table>
+          <!-- Details -->
+          <div class="form-control">
+            <label for="name" id="label-name">
+              ชื่อหมวดหมู่
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="กรอกชื่อหมวดหมู่" />
+          </div>
 
+          <!-- categorycode -->
+          <div class="form-control">
+            <label for="text" id="label-code">
+            รหัสหมวดหมู่
+            </label>
+            <input type="text" id="code" placeholder="กรอกรหัสหมวดหมู่" />
+          </div>
+
+          <div class="form-control">
+            <label for="comment">
+            รายละเอียด
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+          </textarea>
+          </div>
+
+          <!-- Multi-line Text Input Control -->
+          <button type="submit" value="submit">
+            Submit
+          </button>
+          <button type="submit" value="submit">
+            Cancle
+          </button>
+        </form>
       </div>
+
 
 
 
@@ -183,11 +153,8 @@
     </main>
   </section>
 
-  <!-- datatable -->
-  <script>$(document).ready(function () {
-      $('#myTable').DataTable();
-    });</script>
 
+ 
   <script>
     const navBar = document.querySelector("nav"),
       menuBtns = document.querySelectorAll(".menu-icon"),
