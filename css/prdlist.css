@@ -212,11 +212,11 @@ nav.open .sidebar {
 .con-table {
     position: relative;
     width: 95%;
-    padding: 22px;
-    margin-left: 40px;
+    padding: 30px;
+    margin-left: 22px;
     display: grid;
     background: #fff;
-    margin-top: 22px;
+    /* margin-top: 22px; */
     border-radius: 10px;
     /* grid-template-columns: 1fr; */
     grid-gap: 30px;
@@ -370,7 +370,7 @@ table {
             display: grid ;
             height: 200px;
             place-content: center;
-            width: 680px;
+            width: 480px;
             font-size: 20px;
             border-radius: 6px;
             border: 1px dashed #999;
