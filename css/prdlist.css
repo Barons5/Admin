@@ -229,6 +229,23 @@ table {
     border-collapse: collapse;
     /* box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08); */
 }
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+/* btn-add */
+.btn{
+    position: relative;
+    padding: 10px 15px;
+    background: #EF7712;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+}
 
 .con-table thead tr td {
     font-weight: 600;
