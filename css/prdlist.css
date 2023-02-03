@@ -139,10 +139,11 @@ nav .logo {
 }
 
 .logo .logo-name {
-    color: #333;
-    font-size: 22px;
-    font-weight: 500;
-}
+    color: #000;
+    font-size:  40px;
+    font-weight: 600;
+  }
+
 
 nav .sidebar {
 
